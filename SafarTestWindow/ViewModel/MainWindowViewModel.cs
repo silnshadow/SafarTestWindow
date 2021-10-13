@@ -105,30 +105,6 @@ namespace SafarTestWindow.ViewModel
                 MessageBox.Show("User Got Added");
             }
         }
-
-        //private void Save()
-        //{
-        //    var payload = new VerifiedUser()
-        //    {
-        //        UserName = UserName,
-        //        Password = CommonAuthenticationManager.PasswordHasherBase.HashPassword(Password),
-        //        UsersCategoryId = 1
-        //    };
-        //    string strPayload = JsonConvert.SerializeObject(payload);
-        //    HttpContent content = new StringContent(strPayload, Encoding.UTF8, "application/json");
-
-        //    try
-        //    {
-        //        var t = Task.Run(() => _safarService.GenricPostURI(content));
-        //        MessageBox.Show(t.Result + " Successfully");
-        //        IsEnable = false;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw;
-        //    }
-        //}
-
     }
 
     public class ViewModelBaseClass : INotifyPropertyChanged

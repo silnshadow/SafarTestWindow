@@ -5,39 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SafarTestWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <Border Grid.Row="0" BorderThickness="0,1,0,0">
-            <TextBox x:Name="UserName" 
+        Title="MainWindow"
+        Height="350" Width="525">
+    <!--<Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" BorderThickness="0,1,0,0">
+                <TextBox x:Name="UserName" 
                          Margin="10"
                          VerticalContentAlignment="Center"
                          Text="{Binding UserName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-        </Border>
-        <Border Grid.Row="1"  BorderThickness="0,1,0,0">
-            <TextBox x:Name="PasswordBox"
+            </Border>
+            <Border Grid.Row="1"  BorderThickness="0,1,0,0">
+                <TextBox x:Name="PasswordBox"
                          Margin="10"
                          VerticalContentAlignment="Center"
                          Text="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ></TextBox>
-        </Border>
-        <StackPanel
+            </Border>
+            <StackPanel
             Grid.Row="2"
             Margin="10"
             HorizontalAlignment="Center"
             Orientation="Horizontal">
-            <Button 
+                <Button 
                     Content="Register"
                     Background="LightGreen"
                     Command="{Binding SaveCommand}"/>
-            <Button 
+                <Button 
                 Margin="10 0 0 0"
                     Content="LogIn"
                     Background="LightGreen"
                     Command="{Binding LoginCommand}"/>
-        </StackPanel>
+            </StackPanel>
+        </Grid>-->
+    <Grid>
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="18,22,0,0" VerticalAlignment="Top" Width="206" Height="46" Click="button_Click"
+                BorderThickness="0" Padding="0" Background="Transparent">
+            <Image Stretch="UniformToFill"/>
+        </Button>
+        <TextBox x:Name="textBoxOutput" HorizontalAlignment="Left" Height="209" Margin="22,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="470"
+         IsReadOnly="True" ScrollViewer.VerticalScrollBarVisibility="Auto"
+         />
     </Grid>
+
 </Window>
